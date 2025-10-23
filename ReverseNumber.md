@@ -28,3 +28,39 @@ class Program
         Console.WriteLine(rev); // Output: 4321
     }
 }
+
+/*
+#better approach as discussed in the meeting
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int num = 1234;
+        int rev = 0;
+
+        while (num > 0)
+        {
+            int digit = num % 10;     // get last digit
+            rev = rev * 10 + digit;   // shift left and add last digit
+            num /= 10;                // remove last digit
+        }
+
+        Console.WriteLine(rev); // 4321
+    }
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
